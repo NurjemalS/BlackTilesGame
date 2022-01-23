@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+
+body
+{
+    background: black;
+}
+
+#slideshow{
+    margin: 350px auto;
+    display: table;
+}
+
+#slideshow > div
+{
+    display: table-cell; vertical-align: middle; 
+    font-size: 150px;
+    font-family: 'Pushster', cursive;
+    color: rgb(217, 149, 237);
+}
+
+.unclickable{ pointer-events: none; }
+
+#game{
+  display: none;
+}
+
+.title{
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0px;
+  display: flex;
+  justify-content:space-around;
+
+}
+
+.title > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1, h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+#time{
+  font-size: 40px;
+  color: red;
+}
+#score{
+  font-size: 60px;
+  color: green;
+ 
+}
+#hiscore{
+  font-size: 40px;
+}
+
+#layout {
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+
+table tr th{
+  width: 120px;
+  height: 120px;
+  border: 1px solid rgb(132, 130, 133);
+}
+
+#tapmsg{
+  margin: auto;
+  margin-top: -450px;
+  font-size: 65px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(160, 168, 64);
+  display: none;
+  pointer-events: none;
+  user-select: none;
+}
+
+#timeUp{
+  margin: auto;
+  margin-top: -550px;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 10px 20px  rgb(184, 184, 184, 0.4);
+  color: rgb(158, 6, 49);
+  display: none;
+  pointer-events: none;
+  display: none;
+  transition-duration: 0.4s;
+}
+
+#newScore{
+  margin: auto;
+  margin-top: -550px;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: 10px 20px  rgb(184, 184, 184, 0.4);
+  color: rgb(158, 6, 49);
+  display: none;
+  pointer-events: none;
+  user-select: none;
+  transition-duration: 0.5s;
+}
+
+#timebar{
+  position: relative;
+  width: 500px;
+  border: 2px solid rgb(32, 60, 186);
+  height: 15px;
+  margin: auto;
+  background-color:rgb(32, 60, 186);
+}
+
+#timebarinside{
+  position: absolute;
+  left:0;
+  top: 0;
+  width: 500px;
+  margin: auto;
+  background-color: rgb(34, 181, 181);
+  height: 15px;
+}
+
+
+#f5{
+  margin: 60px auto;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: none;
+  pointer-events: none;
+  animation-name: sizeChange;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes sizeChange {
+ 
+  25%  {font-size: 27px;}
+  50%  {font-size: 30px; font-weight: bold;}
+  75%  {font-size: 27px;}
+  100% {font-size: 25px; font-weight: normal;}
+}
+
+
+.tile{
+    font-size: 25px;
+    color: rgb(79, 80, 82);
+    position:absolute;
+    text-align: center;
+    margin: auto;
+}
