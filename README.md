@@ -1,5 +1,5 @@
 # BlackTilesGame
-Fronted Project of CTIS255 course
+Fronted Project of Fronted Web Technologies course
 
 https://NurjemalS.github.io/BlackTilesGame
 
